@@ -1,0 +1,24 @@
+CREATE DATABASE bamazon_db;
+
+USE bamazon_db;
+
+
+CREATE TABLE products (
+  item_id INT(100) NOT NULL AUTO_INCREMENT,
+  product_name VARCHAR(50) NOT NULL,
+  department_name VARCHAR(50) NOT NULL,
+  price DECIMAL(10,2) NOT NULL,
+  stock_quantity INT(200) NOT NULL,
+  PRIMARY KEY (item_id)
+);
+
+
+
+SELECT * FROM bamazon_db.products;
+
+INSERT INTO products (product_name, department_name, price, stock_quantity)
+VALUES ("TV", "Electronics", 999, 20),("VCR", "Electronics", 10, 10),("GAME BOY", "Electronics", 4.99, 200),("DVD PLAYER", "Electronics", 50, 200),("TOILET PAPER", "Household Care", 20, 12),
+("XBOX", "Electronics", 200, 100),("PS4 PRO", "Electronics", 349.99, 125),("iPhone", "Communications", 500, 180),("ANDROID", "Communications", 399, 160),("LAPTOP", "Electronics", 900, 55);
+
+
+--
